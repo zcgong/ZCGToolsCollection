@@ -1,0 +1,1228 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1C3D52573BEB52AA63491EFA /* NSArray+DifferenceTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */; };
+		1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */; };
+		1C3D53FD2743FE3D77502EA5 /* NSNull+NaturalTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */; };
+		1C3D597D7DB91993DDD04091 /* NSArray+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */; };
+		1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */; };
+		1C3D5F14013A290175157FDE /* NSObject+EqualsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */; };
+		1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */; };
+		A6249A981948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.m in Sources */ = {isa = PBXBuildFile; fileRef = A6249A941948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.m */; };
+		A6249A9D1948BC3300B1BD41 /* UIBezierPath+OVShapes.m in Sources */ = {isa = PBXBuildFile; fileRef = A6249A9C1948BC3300B1BD41 /* UIBezierPath+OVShapes.m */; };
+		A6249AA01948BC3A00B1BD41 /* UIColor+OVRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = A6249A9F1948BC3A00B1BD41 /* UIColor+OVRandom.m */; };
+		A6249AA31948BC6E00B1BD41 /* UIImage+OVDrawing.m in Sources */ = {isa = PBXBuildFile; fileRef = A6249AA21948BC6E00B1BD41 /* UIImage+OVDrawing.m */; };
+		A62C44EA17B14FCA003B335B /* NSArray+OVSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E917B14FCA003B335B /* NSArray+OVSorting.m */; };
+		A62C44EB17B14FE7003B335B /* NSMutableArray+OVSorting.m in Sources */ = {isa = PBXBuildFile; fileRef = A62C44E717B14FBD003B335B /* NSMutableArray+OVSorting.m */; };
+		A64919E9193891F30075626D /* UIColor+OVColorAdjust.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */; };
+		A64919EA193891F30075626D /* UIImage+OVGradients.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E1193891F30075626D /* UIImage+OVGradients.m */; };
+		A64919EB193891F30075626D /* UIImage+OVTransforms.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E3193891F30075626D /* UIImage+OVTransforms.m */; };
+		A64919EC193891F30075626D /* UIView+OVPositioning.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E6193891F30075626D /* UIView+OVPositioning.m */; };
+		A64919ED193891F30075626D /* UIView+OVSnapshot.m in Sources */ = {isa = PBXBuildFile; fileRef = A64919E8193891F30075626D /* UIView+OVSnapshot.m */; };
+		A6C0D05F193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */; };
+		A6C45B9B17BE6673000F100F /* NSDate+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */; };
+		B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
+		B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */; };
+		B9BEB6E51669B27100A1D26D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6E41669B27100A1D26D /* UIKit.framework */; };
+		B9BEB6E61669B27100A1D26D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D31669B27100A1D26D /* Foundation.framework */; };
+		B9BEB6E91669B27100A1D26D /* libOverline.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B9BEB6D01669B27100A1D26D /* libOverline.a */; };
+		B9BEB6EF1669B27100A1D26D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B9BEB6ED1669B27100A1D26D /* InfoPlist.strings */; };
+		CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = BF2F2C3B42004E7080F20EB9 /* libPods.a */; };
+		D04240221F16700D627B0560 /* NSString+RegularExpressionTestWithCpp.mm in Sources */ = {isa = PBXBuildFile; fileRef = D0424E278809EB08E9BC290B /* NSString+RegularExpressionTestWithCpp.mm */; };
+		D042402DF934C5D1B56556C1 /* NSDictionary+OVPath.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04247A852F232C1077D12B4 /* NSDictionary+OVPath.h */; };
+		D04240458F4302971323546A /* NSDictionary+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424F6DA1F01F7010322FE6 /* NSDictionary+OVCore.m */; };
+		D0424046CFCC7F3FA4D17EC1 /* NSString+OVJSON.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042484DEFFFD2F7587F9D06 /* NSString+OVJSON.h */; };
+		D04240602594BA2BD7EBE3D7 /* NSDictionary+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D749FAA12D228A9AF1E /* NSDictionary+OVEnumeration.m */; };
+		D042407BA916C7232ADB8CF1 /* NSDictionary+OVPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D04247D1B323DC1DD7540E31 /* NSDictionary+OVPath.m */; };
+		D04240967DAC37DA92E6F6B3 /* NSArray+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424E56FE025B0487646B59 /* NSArray+OVShorthand.m */; };
+		D042409A29985E6B5A21E8EC /* Overline.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042400B602A3B13E5F07390 /* Overline.h */; };
+		D04240CEE70776EE9270EB55 /* NSNull+OVNatural.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04240264D142D58417DA56A /* NSNull+OVNatural.h */; };
+		D0424112583F1149E402ADC9 /* NSString+OVBase64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424915C4F6EBE97D420115 /* NSString+OVBase64Encode.m */; };
+		D0424134779EA93852F1692F /* NSSet+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240116AAC53A0946BCC42 /* NSSet+OVCore.m */; };
+		D042415F073248C734C5C922 /* NSDictionary+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424F6DA1F01F7010322FE6 /* NSDictionary+OVCore.m */; };
+		D0424198BE863AA5060AC621 /* NSArray+RandomTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424426C03EA111BD75A196 /* NSArray+RandomTest.m */; };
+		D04241F736A92C31F7D521F0 /* NSURL+OVDirectories.m in Sources */ = {isa = PBXBuildFile; fileRef = D042473412C920D0AC873990 /* NSURL+OVDirectories.m */; };
+		D04242109B9448BB755659F6 /* NSArray+OVInitialize.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424840B6B0068DA39BBA64 /* NSArray+OVInitialize.h */; };
+		D0424231AB59DF097731A9AA /* NSString+OVDebugging.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04245468E445BE883C02CA5 /* NSString+OVDebugging.h */; };
+		D0424236C1CA72FDC68F3217 /* NSString+OVJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A9D610E776FA06C5B0 /* NSString+OVJSON.m */; };
+		D0424286ECDE78329A9BCB43 /* NSArray+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D04249B6E8A507DC042808B6 /* NSArray+OVCore.m */; };
+		D04242B72684127F4D2491F7 /* NSSet+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04246C493538AEE71FD3659 /* NSSet+OVEnumeration.m */; };
+		D04242E0EEE78071099F87B6 /* NSObject+Equals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424A809276F441FAF9EE8E /* NSObject+Equals.h */; };
+		D04243009BD43CE60EE4E345 /* NSNull+OVNatural.m in Sources */ = {isa = PBXBuildFile; fileRef = D042468F7E42B4AD614187B1 /* NSNull+OVNatural.m */; };
+		D04243065691A7A1AD4978ED /* NSData+OVBase64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = D042404CB86252C7D0D19801 /* NSData+OVBase64Encode.m */; };
+		D042433459084490D6378763 /* NSString+ComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A73C79C6BB38EA0D8AB /* NSString+ComponentsTest.m */; };
+		D042435962AACA45462195BA /* NSString+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240AE8161B489C69DB88A /* NSString+OVShorthand.m */; };
+		D042435B5DEF196FA65D5B68 /* NSArray+OVInitialize.m in Sources */ = {isa = PBXBuildFile; fileRef = D042498C02813F5714CD480A /* NSArray+OVInitialize.m */; };
+		D042436CABBF32AA0113BB57 /* NSString+OVBase64Encode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424EDFF3EA6913527AF0B0 /* NSString+OVBase64Encode.h */; };
+		D0424394B37759469448C4AF /* NSArray+OVDifference.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A40ECC8BD48759D5A72 /* NSArray+OVDifference.m */; };
+		D04243CE7F7D4CC814CF72CF /* NSNumber+OVEquals.m in Sources */ = {isa = PBXBuildFile; fileRef = D042467B11B254FD7203290F /* NSNumber+OVEquals.m */; };
+		D04243DA34EE5E3F2E346B4D /* test_json.json in Resources */ = {isa = PBXBuildFile; fileRef = D04249B037D915E7C43676E3 /* test_json.json */; };
+		D04243E123619AFA41C2410B /* NSArray+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */; };
+		D04243E81B3953AC0F40029E /* NSArray+OVSubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243F380DE414A55D6C2A4 /* NSArray+OVSubArray.m */; };
+		D04244041D5AD4484F99EA55 /* NSString+OVJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A9D610E776FA06C5B0 /* NSString+OVJSON.m */; };
+		D042440D1A1BFCC63044C755 /* NSArray+OVReverse.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424808AD3AADC17112E2FC /* NSArray+OVReverse.h */; };
+		D042441789DD45034ED7E941 /* NSString+OVDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A4A803B782A8FA502D4 /* NSString+OVDebugging.m */; };
+		D042441E13E90F123551E40F /* NSString+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042458B093499E4CAB6522C /* NSString+ShorthandTest.m */; };
+		D04244245F4071E57E29CBA5 /* NSObject+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424CEAF7C42EC9BD0937C7 /* NSObject+Equals.m */; };
+		D0424489BD1E05FE459FB3D9 /* NSString+OVURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A970FD3B90C0E8DF79 /* NSString+OVURLEncode.m */; };
+		D04244BCA8B0862715B9A3AF /* NSString+OVRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424207CBC3948E027DE1EC /* NSString+OVRegularExpression.m */; };
+		D04244E8A718D2895367A687 /* NSBundle+OVShorthand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424D14ED065A4E1E61323D /* NSBundle+OVShorthand.h */; };
+		D04244EE941D5640983AED47 /* NSArray+OVEnumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04242C399EC07EE9B5793B9 /* NSArray+OVEnumeration.h */; };
+		D042451291D2AF9E120DDD99 /* NSSet+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248A7B93BE23DE2E224A6 /* NSSet+EnumerationTest.m */; };
+		D042451A5297965AD08F7AFF /* NSArray+OVSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243B92EA94F475DF9B361 /* NSArray+OVSelector.m */; };
+		D04245254AD1A054756C81A4 /* NSArray+OVRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D042464969047BA9F9FC4067 /* NSArray+OVRandom.m */; };
+		D0424553E909B8F816BA641F /* NSNull+OVNatural.m in Sources */ = {isa = PBXBuildFile; fileRef = D042468F7E42B4AD614187B1 /* NSNull+OVNatural.m */; };
+		D0424554AF00FFFF6A618953 /* NSDictionary+PathTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424772830A98D01A4FCE27 /* NSDictionary+PathTest.m */; };
+		D042455525DA8BD0FC3AFA9D /* NSDictionary+OVSelector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04248D9D3252D34FC30ED1A /* NSDictionary+OVSelector.h */; };
+		D04245A95C0F5183BBCF1B35 /* NSMutableArray+OVShorthand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424F4D0B6041530EBE1828 /* NSMutableArray+OVShorthand.h */; };
+		D04245C546C04029DA3ED866 /* NSData+OVBase64Encode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042407D153AF56D7BF47D34 /* NSData+OVBase64Encode.h */; };
+		D04245DB47B108B8D96F532F /* NSString+RegularExpressionTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042495C6033AD086F92EF77 /* NSString+RegularExpressionTest.m */; };
+		D042461A95ACB2684DFEB4AC /* NSNumber+OVEquals.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04244F9ABECA20B4A95C8CD /* NSNumber+OVEquals.h */; };
+		D042463D1665156E36063B3C /* NSArray+SubArrayTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424894673E704C67F15986 /* NSArray+SubArrayTest.m */; };
+		D04246600B5FAB7180E63376 /* NSString+OVRegularExpression.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04241DF8EFAB6F719B768A2 /* NSString+OVRegularExpression.h */; };
+		D04246B313A63543867621E5 /* NSMutableArray+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BEF37220624679EEEB3 /* NSMutableArray+OVShorthand.m */; };
+		D04246B4E2C64AF095ABF255 /* NSSet+OVEnumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424BB08C33D1F962AB6B4C /* NSSet+OVEnumeration.h */; };
+		D04246BAB5A5671BCA66B6DF /* NSArray+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424CF217C7DDFC4BE9E8F2 /* NSArray+OVEnumeration.m */; };
+		D04246F4416FCA3990F012FF /* NSArray+OVCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04246E08238CCCC69B4E13D /* NSArray+OVCore.h */; };
+		D0424708CB0CDBB30346B8AC /* NSString+URLEncodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04247AD1611453237486D1F /* NSString+URLEncodeTest.m */; };
+		D042470D3FBFE9B52210353C /* NSBundle+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424766886F554380AE5591 /* NSBundle+ShorthandTest.m */; };
+		D0424783D2D5E3181000B36A /* NSString+OVHash.m in Sources */ = {isa = PBXBuildFile; fileRef = D042454875D60F3F899A277B /* NSString+OVHash.m */; };
+		D04247937D4A8211BDFA7788 /* NSBundle+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243D574640BAE1D987643 /* NSBundle+OVShorthand.m */; };
+		D04247A89C3D42CF83135C44 /* NSURL+OVDirectories.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04243F65DB63D9828CA4626 /* NSURL+OVDirectories.h */; };
+		D04247CF2635FFFC87775127 /* NSDictionary+OVEnumeration.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042453749FA838A230BE280 /* NSDictionary+OVEnumeration.h */; };
+		D04247FF7A761AA822939C86 /* NSString+OVShorthand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042431C1FAEDA86EBBC16AE /* NSString+OVShorthand.h */; };
+		D0424829DFC36B940FB00E10 /* NSString+OVBase64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424915C4F6EBE97D420115 /* NSString+OVBase64Encode.m */; };
+		D0424857C46890BD8CC58FC6 /* NSDictionary+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424D749FAA12D228A9AF1E /* NSDictionary+OVEnumeration.m */; };
+		D042486D8AB6775F79433BCA /* NSArray+OVSubArray.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04241291A0341A3B0DC4DD7 /* NSArray+OVSubArray.h */; };
+		D0424881C1FFFD1C57024669 /* NSArray+OVShorthand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424C822FE8525FFD191A4C /* NSArray+OVShorthand.h */; };
+		D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */; };
+		D04248906C44439564BE405C /* NSURL+OVDirectories.m in Sources */ = {isa = PBXBuildFile; fileRef = D042473412C920D0AC873990 /* NSURL+OVDirectories.m */; };
+		D04248B94E67CE2DCA2B35B1 /* NSDateFormatter+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243DE4A3B312DFE907596 /* NSDateFormatter+OVShorthand.m */; };
+		D04248CCC66B763FAB0214DC /* NSDateFormatter+OVShorthand.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D042408BC2B66584CE53E358 /* NSDateFormatter+OVShorthand.h */; };
+		D04248E08202943DF5F5C185 /* NSString+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424E1C6EE3445E871F6D4D /* NSString+OVComponents.m */; };
+		D0424925BE27D4667FB9DA40 /* NSArray+OVDifference.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424FB099E5059CE5289F8E /* NSArray+OVDifference.h */; };
+		D042497F446D91BF81D3351A /* NSDictionary+EnumerationTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04241DAD3B1E577CF535057 /* NSDictionary+EnumerationTest.m */; };
+		D0424993D2C2DB96971B20DC /* NSString+JSONTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */; };
+		D042499F81E5EDF769728DD7 /* NSDictionary+OVCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04242A86A7F25F2E155D0FC /* NSDictionary+OVCore.h */; };
+		D04249B25FCA1CAEFDE11CEA /* NSString+OVDebugging.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424A4A803B782A8FA502D4 /* NSString+OVDebugging.m */; };
+		D0424A4EFABD146CA5219E97 /* NSArray+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D04249B6E8A507DC042808B6 /* NSArray+OVCore.m */; };
+		D0424A72ED3E69DEA81CAFCC /* NSObject+Equals.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424CEAF7C42EC9BD0937C7 /* NSObject+Equals.m */; };
+		D0424A90D2DF6E2DEFD8FB63 /* NSBundle+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243D574640BAE1D987643 /* NSBundle+OVShorthand.m */; };
+		D0424AA50EED21145E0BD0BC /* NSArray+OVSubArray.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243F380DE414A55D6C2A4 /* NSArray+OVSubArray.m */; };
+		D0424AE10BC8E11361A49A93 /* OVBase64Encode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424224719D34C7BFA8A47E /* OVBase64Encode.h */; };
+		D0424B141888F8BEB7CE078F /* NSString+OVRegularExpression.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424207CBC3948E027DE1EC /* NSString+OVRegularExpression.m */; };
+		D0424B6652757CE4A615E357 /* NSSet+OVCore.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04243DDE37F212FFAE310FF /* NSSet+OVCore.h */; };
+		D0424B8CEAEED7E939C6EA5D /* NSData+OVBase64Encode.m in Sources */ = {isa = PBXBuildFile; fileRef = D042404CB86252C7D0D19801 /* NSData+OVBase64Encode.m */; };
+		D0424B98F7377E328F098F3C /* NSString+OVHash.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04247A0B7CA6F731535AC2D /* NSString+OVHash.h */; };
+		D0424B9A19C1D0E04B2B98BB /* NSString+Base64EncodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424B8E20BEA208DEAFE2B3 /* NSString+Base64EncodeTest.m */; };
+		D0424BD783E99F56CD0DFA31 /* NSURL+OVComponents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424B70FF7E679AC7E03C99 /* NSURL+OVComponents.h */; };
+		D0424BEF4E84BFE0D37D595C /* NSURL+ComponentsTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042468B375A7E6202FAEB7A /* NSURL+ComponentsTest.m */; };
+		D0424C024F573C3E5C21A294 /* NSString+OVURLEncode.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D04240A9A366C36401A05F26 /* NSString+OVURLEncode.h */; };
+		D0424C792702266B3848E1A2 /* NSDictionary+OVPath.m in Sources */ = {isa = PBXBuildFile; fileRef = D04247D1B323DC1DD7540E31 /* NSDictionary+OVPath.m */; };
+		D0424C9D1AB7E097E698ACCF /* NSSet+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D04246C493538AEE71FD3659 /* NSSet+OVEnumeration.m */; };
+		D0424CD5CA67478BEE46AD05 /* NSURL+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424516AD272E3BB4A2D6D0 /* NSURL+OVComponents.m */; };
+		D0424CF0053C60675B2DB2F4 /* NSDateFormatter+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243DE4A3B312DFE907596 /* NSDateFormatter+OVShorthand.m */; };
+		D0424D0280856C34440C2947 /* NSDateFormatter+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424363BBA9E0B17BE4F77F /* NSDateFormatter+ShorthandTest.m */; };
+		D0424D64CEA7F052D03E15C6 /* NSString+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424E1C6EE3445E871F6D4D /* NSString+OVComponents.m */; };
+		D0424D8388677823D283FCF6 /* NSString+OVHash.m in Sources */ = {isa = PBXBuildFile; fileRef = D042454875D60F3F899A277B /* NSString+OVHash.m */; };
+		D0424E2178D93B99D4B0F741 /* NSDictionary+SelectorTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04248A3BA01B17C3B7189B2 /* NSDictionary+SelectorTest.m */; };
+		D0424E4CF30A9A3495BB82F9 /* NSURL+OVComponents.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424516AD272E3BB4A2D6D0 /* NSURL+OVComponents.m */; };
+		D0424E80BAFCAFAF61A4FEE5 /* NSString+OVURLEncode.m in Sources */ = {isa = PBXBuildFile; fileRef = D04242A970FD3B90C0E8DF79 /* NSString+OVURLEncode.m */; };
+		D0424E89A6F2CBDC6DEDBA51 /* NSArray+OVRandom.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424CCD846FD2BFD9E4F3AB /* NSArray+OVRandom.h */; };
+		D0424E9BBB11CA61D55A7D75 /* NSNumber+OVEquals.m in Sources */ = {isa = PBXBuildFile; fileRef = D042467B11B254FD7203290F /* NSNumber+OVEquals.m */; };
+		D0424F1BB1F8D1D39FA79049 /* NSSet+OVCore.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240116AAC53A0946BCC42 /* NSSet+OVCore.m */; };
+		D0424F32AF19B655B6797C89 /* NSString+OVComponents.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = D0424D83ABD78BA8C672B87B /* NSString+OVComponents.h */; };
+		D0424F4543B2FCEA80BA9C0C /* NSData+Base64EncodeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D042485F5640A2098A536A83 /* NSData+Base64EncodeTest.m */; };
+		D0424F4BA13A8684548F7187 /* NSString+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240AE8161B489C69DB88A /* NSString+OVShorthand.m */; };
+		D0424F4EFECE5A671B09D330 /* NSArray+OVSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = D04243B92EA94F475DF9B361 /* NSArray+OVSelector.m */; };
+		D0424F783EC65563531D4F95 /* NSMutableArray+OVShorthand.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424BEF37220624679EEEB3 /* NSMutableArray+OVShorthand.m */; };
+		D0424F7EEE338B0951F4D47D /* NSArray+OVEnumeration.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424CF217C7DDFC4BE9E8F2 /* NSArray+OVEnumeration.m */; };
+		D0424F87E4C59ABD7F913299 /* NSString+HashTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04240A24254FAAECA38EE4A /* NSString+HashTest.m */; };
+		D0424F8C53390354B30DDDC3 /* NSArray+OVRandom.m in Sources */ = {isa = PBXBuildFile; fileRef = D042464969047BA9F9FC4067 /* NSArray+OVRandom.m */; };
+		D0424F992092522EA914C301 /* NSMutableArray+ShorthandTest.m in Sources */ = {isa = PBXBuildFile; fileRef = D04241A30FD694A8C3E3CD23 /* NSMutableArray+ShorthandTest.m */; };
+		D0424FD7AB12D0164FF11C47 /* NSDictionary+OVSelector.m in Sources */ = {isa = PBXBuildFile; fileRef = D0424F44BAE4A0B2604E02F4 /* NSDictionary+OVSelector.m */; };
+		D0424FDF7CABD139FFB6B50D /* NSArray+OVReverse.m in Sources */ = {isa = PBXBuildFile; fileRef = D042468A9883EBD84D5080BA /* NSArray+OVReverse.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B9BEB6E71669B27100A1D26D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B9BEB6C71669B27100A1D26D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B9BEB6CF1669B27100A1D26D;
+			remoteInfo = Overline;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B9BEB6CE1669B27100A1D26D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				D042499F81E5EDF769728DD7 /* NSDictionary+OVCore.h in CopyFiles */,
+				D04246F4416FCA3990F012FF /* NSArray+OVCore.h in CopyFiles */,
+				D0424B6652757CE4A615E357 /* NSSet+OVCore.h in CopyFiles */,
+				D04248CCC66B763FAB0214DC /* NSDateFormatter+OVShorthand.h in CopyFiles */,
+				D04247CF2635FFFC87775127 /* NSDictionary+OVEnumeration.h in CopyFiles */,
+				D042402DF934C5D1B56556C1 /* NSDictionary+OVPath.h in CopyFiles */,
+				D042455525DA8BD0FC3AFA9D /* NSDictionary+OVSelector.h in CopyFiles */,
+				D04245C546C04029DA3ED866 /* NSData+OVBase64Encode.h in CopyFiles */,
+				D04242E0EEE78071099F87B6 /* NSObject+Equals.h in CopyFiles */,
+				D04240CEE70776EE9270EB55 /* NSNull+OVNatural.h in CopyFiles */,
+				D0424F32AF19B655B6797C89 /* NSString+OVComponents.h in CopyFiles */,
+				D04246600B5FAB7180E63376 /* NSString+OVRegularExpression.h in CopyFiles */,
+				D04247FF7A761AA822939C86 /* NSString+OVShorthand.h in CopyFiles */,
+				D0424B98F7377E328F098F3C /* NSString+OVHash.h in CopyFiles */,
+				D0424C024F573C3E5C21A294 /* NSString+OVURLEncode.h in CopyFiles */,
+				D0424046CFCC7F3FA4D17EC1 /* NSString+OVJSON.h in CopyFiles */,
+				D042436CABBF32AA0113BB57 /* NSString+OVBase64Encode.h in CopyFiles */,
+				D04246B4E2C64AF095ABF255 /* NSSet+OVEnumeration.h in CopyFiles */,
+				D04244E8A718D2895367A687 /* NSBundle+OVShorthand.h in CopyFiles */,
+				D04244EE941D5640983AED47 /* NSArray+OVEnumeration.h in CopyFiles */,
+				D0424E89A6F2CBDC6DEDBA51 /* NSArray+OVRandom.h in CopyFiles */,
+				D04245A95C0F5183BBCF1B35 /* NSMutableArray+OVShorthand.h in CopyFiles */,
+				D042486D8AB6775F79433BCA /* NSArray+OVSubArray.h in CopyFiles */,
+				D04242109B9448BB755659F6 /* NSArray+OVInitialize.h in CopyFiles */,
+				D042440D1A1BFCC63044C755 /* NSArray+OVReverse.h in CopyFiles */,
+				D0424881C1FFFD1C57024669 /* NSArray+OVShorthand.h in CopyFiles */,
+				D0424925BE27D4667FB9DA40 /* NSArray+OVDifference.h in CopyFiles */,
+				D0424BD783E99F56CD0DFA31 /* NSURL+OVComponents.h in CopyFiles */,
+				D042461A95ACB2684DFEB4AC /* NSNumber+OVEquals.h in CopyFiles */,
+				D0424AE10BC8E11361A49A93 /* OVBase64Encode.h in CopyFiles */,
+				D042409A29985E6B5A21E8EC /* Overline.h in CopyFiles */,
+				D0424231AB59DF097731A9AA /* NSString+OVDebugging.h in CopyFiles */,
+				D04247A89C3D42CF83135C44 /* NSURL+OVDirectories.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+DifferenceTest.m"; sourceTree = "<group>"; };
+		1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+EqualsTest.m"; sourceTree = "<group>"; };
+		1C3D53CE39A72650FB5E56C8 /* Overline+BlocksKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Overline+BlocksKit.h"; sourceTree = "<group>"; };
+		1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+NaturalTest.m"; sourceTree = "<group>"; };
+		1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ReverseTest.m"; sourceTree = "<group>"; };
+		1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+EqualsTest.m"; sourceTree = "<group>"; };
+		1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+InitializeTest.m"; sourceTree = "<group>"; };
+		1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+ShorthandTest.m"; sourceTree = "<group>"; };
+		776CEF8582F049128B505AAB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
+		A6249A931948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSLayoutConstraint+OVConstructors.h"; sourceTree = "<group>"; };
+		A6249A941948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSLayoutConstraint+OVConstructors.m"; sourceTree = "<group>"; };
+		A6249A9B1948BC3300B1BD41 /* UIBezierPath+OVShapes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+OVShapes.h"; sourceTree = "<group>"; };
+		A6249A9C1948BC3300B1BD41 /* UIBezierPath+OVShapes.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+OVShapes.m"; sourceTree = "<group>"; };
+		A6249A9E1948BC3A00B1BD41 /* UIColor+OVRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OVRandom.h"; sourceTree = "<group>"; };
+		A6249A9F1948BC3A00B1BD41 /* UIColor+OVRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OVRandom.m"; sourceTree = "<group>"; };
+		A6249AA11948BC6E00B1BD41 /* UIImage+OVDrawing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OVDrawing.h"; sourceTree = "<group>"; };
+		A6249AA21948BC6E00B1BD41 /* UIImage+OVDrawing.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OVDrawing.m"; sourceTree = "<group>"; };
+		A6249AA41948BCF700B1BD41 /* Overline+UIKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Overline+UIKit.h"; sourceTree = "<group>"; };
+		A62C44E617B14FBD003B335B /* NSMutableArray+OVSorting.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+OVSorting.h"; sourceTree = "<group>"; };
+		A62C44E717B14FBD003B335B /* NSMutableArray+OVSorting.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+OVSorting.m"; sourceTree = "<group>"; };
+		A62C44E817B14FCA003B335B /* NSArray+OVSorting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVSorting.h"; sourceTree = "<group>"; };
+		A62C44E917B14FCA003B335B /* NSArray+OVSorting.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVSorting.m"; sourceTree = "<group>"; };
+		A64919DD193891F30075626D /* UIColor+OVColorAdjust.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+OVColorAdjust.h"; sourceTree = "<group>"; };
+		A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OVColorAdjust.m"; sourceTree = "<group>"; };
+		A64919E0193891F30075626D /* UIImage+OVGradients.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OVGradients.h"; sourceTree = "<group>"; };
+		A64919E1193891F30075626D /* UIImage+OVGradients.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OVGradients.m"; sourceTree = "<group>"; };
+		A64919E2193891F30075626D /* UIImage+OVTransforms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OVTransforms.h"; sourceTree = "<group>"; };
+		A64919E3193891F30075626D /* UIImage+OVTransforms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OVTransforms.m"; sourceTree = "<group>"; };
+		A64919E5193891F30075626D /* UIView+OVPositioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OVPositioning.h"; sourceTree = "<group>"; };
+		A64919E6193891F30075626D /* UIView+OVPositioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVPositioning.m"; sourceTree = "<group>"; };
+		A64919E7193891F30075626D /* UIView+OVSnapshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+OVSnapshot.h"; sourceTree = "<group>"; };
+		A64919E8193891F30075626D /* UIView+OVSnapshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+OVSnapshot.m"; sourceTree = "<group>"; };
+		A6C0D05D193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableDictionary+OVShorthand.h"; sourceTree = "<group>"; };
+		A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableDictionary+OVShorthand.m"; sourceTree = "<group>"; };
+		A6C45B9917BE6673000F100F /* NSDate+OVComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSDate+OVComponents.h"; path = "NSDate/NSDate+OVComponents.h"; sourceTree = "<group>"; };
+		A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSDate+OVComponents.m"; path = "NSDate/NSDate+OVComponents.m"; sourceTree = "<group>"; };
+		B9BEB6D01669B27100A1D26D /* libOverline.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libOverline.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BEB6D31669B27100A1D26D /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B9BEB6D71669B27100A1D26D /* Overline-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Overline-Prefix.pch"; sourceTree = "<group>"; };
+		B9BEB6E11669B27100A1D26D /* OverlineTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = OverlineTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9BEB6E41669B27100A1D26D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		B9BEB6EC1669B27100A1D26D /* OverlineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "OverlineTests-Info.plist"; sourceTree = "<group>"; };
+		B9BEB6EE1669B27100A1D26D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		BF2F2C3B42004E7080F20EB9 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		D042400B602A3B13E5F07390 /* Overline.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Overline.h; sourceTree = "<group>"; };
+		D04240116AAC53A0946BCC42 /* NSSet+OVCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+OVCore.m"; sourceTree = "<group>"; };
+		D04240264D142D58417DA56A /* NSNull+OVNatural.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNull+OVNatural.h"; sourceTree = "<group>"; };
+		D042404CB86252C7D0D19801 /* NSData+OVBase64Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+OVBase64Encode.m"; sourceTree = "<group>"; };
+		D042407D153AF56D7BF47D34 /* NSData+OVBase64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+OVBase64Encode.h"; sourceTree = "<group>"; };
+		D042408BC2B66584CE53E358 /* NSDateFormatter+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDateFormatter+OVShorthand.h"; sourceTree = "<group>"; };
+		D04240A24254FAAECA38EE4A /* NSString+HashTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+HashTest.m"; sourceTree = "<group>"; };
+		D04240A9A366C36401A05F26 /* NSString+OVURLEncode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVURLEncode.h"; sourceTree = "<group>"; };
+		D04240AE8161B489C69DB88A /* NSString+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVShorthand.m"; sourceTree = "<group>"; };
+		D04241291A0341A3B0DC4DD7 /* NSArray+OVSubArray.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVSubArray.h"; sourceTree = "<group>"; };
+		D04241A30FD694A8C3E3CD23 /* NSMutableArray+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+ShorthandTest.m"; sourceTree = "<group>"; };
+		D04241DAD3B1E577CF535057 /* NSDictionary+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+EnumerationTest.m"; sourceTree = "<group>"; };
+		D04241DF8EFAB6F719B768A2 /* NSString+OVRegularExpression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVRegularExpression.h"; sourceTree = "<group>"; };
+		D0424207CBC3948E027DE1EC /* NSString+OVRegularExpression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVRegularExpression.m"; sourceTree = "<group>"; };
+		D0424224719D34C7BFA8A47E /* OVBase64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OVBase64Encode.h; sourceTree = "<group>"; };
+		D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JSONTest.m"; sourceTree = "<group>"; };
+		D04242A86A7F25F2E155D0FC /* NSDictionary+OVCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OVCore.h"; sourceTree = "<group>"; };
+		D04242A970FD3B90C0E8DF79 /* NSString+OVURLEncode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVURLEncode.m"; sourceTree = "<group>"; };
+		D04242A9D610E776FA06C5B0 /* NSString+OVJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVJSON.m"; sourceTree = "<group>"; };
+		D04242C399EC07EE9B5793B9 /* NSArray+OVEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVEnumeration.h"; sourceTree = "<group>"; };
+		D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+EnumerationTest.m"; sourceTree = "<group>"; };
+		D042431C1FAEDA86EBBC16AE /* NSString+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVShorthand.h"; sourceTree = "<group>"; };
+		D0424363BBA9E0B17BE4F77F /* NSDateFormatter+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+ShorthandTest.m"; sourceTree = "<group>"; };
+		D04243B92EA94F475DF9B361 /* NSArray+OVSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVSelector.m"; sourceTree = "<group>"; };
+		D04243D574640BAE1D987643 /* NSBundle+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+OVShorthand.m"; sourceTree = "<group>"; };
+		D04243DDE37F212FFAE310FF /* NSSet+OVCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OVCore.h"; sourceTree = "<group>"; };
+		D04243DE4A3B312DFE907596 /* NSDateFormatter+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDateFormatter+OVShorthand.m"; sourceTree = "<group>"; };
+		D04243F380DE414A55D6C2A4 /* NSArray+OVSubArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVSubArray.m"; sourceTree = "<group>"; };
+		D04243F65DB63D9828CA4626 /* NSURL+OVDirectories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+OVDirectories.h"; sourceTree = "<group>"; };
+		D0424426C03EA111BD75A196 /* NSArray+RandomTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+RandomTest.m"; sourceTree = "<group>"; };
+		D04244F9ABECA20B4A95C8CD /* NSNumber+OVEquals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNumber+OVEquals.h"; sourceTree = "<group>"; };
+		D0424516AD272E3BB4A2D6D0 /* NSURL+OVComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+OVComponents.m"; sourceTree = "<group>"; };
+		D042453749FA838A230BE280 /* NSDictionary+OVEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OVEnumeration.h"; sourceTree = "<group>"; };
+		D04245468E445BE883C02CA5 /* NSString+OVDebugging.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVDebugging.h"; sourceTree = "<group>"; };
+		D042454875D60F3F899A277B /* NSString+OVHash.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVHash.m"; sourceTree = "<group>"; };
+		D042458B093499E4CAB6522C /* NSString+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ShorthandTest.m"; sourceTree = "<group>"; };
+		D042464969047BA9F9FC4067 /* NSArray+OVRandom.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVRandom.m"; sourceTree = "<group>"; };
+		D042467B11B254FD7203290F /* NSNumber+OVEquals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNumber+OVEquals.m"; sourceTree = "<group>"; };
+		D042468A9883EBD84D5080BA /* NSArray+OVReverse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVReverse.m"; sourceTree = "<group>"; };
+		D042468B375A7E6202FAEB7A /* NSURL+ComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+ComponentsTest.m"; sourceTree = "<group>"; };
+		D042468F7E42B4AD614187B1 /* NSNull+OVNatural.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNull+OVNatural.m"; sourceTree = "<group>"; };
+		D04246C493538AEE71FD3659 /* NSSet+OVEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+OVEnumeration.m"; sourceTree = "<group>"; };
+		D04246E08238CCCC69B4E13D /* NSArray+OVCore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVCore.h"; sourceTree = "<group>"; };
+		D042473412C920D0AC873990 /* NSURL+OVDirectories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURL+OVDirectories.m"; sourceTree = "<group>"; };
+		D0424766886F554380AE5591 /* NSBundle+ShorthandTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSBundle+ShorthandTest.m"; sourceTree = "<group>"; };
+		D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SelectorTest.m"; sourceTree = "<group>"; };
+		D0424772830A98D01A4FCE27 /* NSDictionary+PathTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+PathTest.m"; sourceTree = "<group>"; };
+		D04247A0B7CA6F731535AC2D /* NSString+OVHash.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVHash.h"; sourceTree = "<group>"; };
+		D04247A852F232C1077D12B4 /* NSDictionary+OVPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OVPath.h"; sourceTree = "<group>"; };
+		D04247AD1611453237486D1F /* NSString+URLEncodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+URLEncodeTest.m"; sourceTree = "<group>"; };
+		D04247D1B323DC1DD7540E31 /* NSDictionary+OVPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OVPath.m"; sourceTree = "<group>"; };
+		D0424808AD3AADC17112E2FC /* NSArray+OVReverse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVReverse.h"; sourceTree = "<group>"; };
+		D0424840B6B0068DA39BBA64 /* NSArray+OVInitialize.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVInitialize.h"; sourceTree = "<group>"; };
+		D042484DEFFFD2F7587F9D06 /* NSString+OVJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVJSON.h"; sourceTree = "<group>"; };
+		D042485F5640A2098A536A83 /* NSData+Base64EncodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+Base64EncodeTest.m"; sourceTree = "<group>"; };
+		D0424894673E704C67F15986 /* NSArray+SubArrayTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+SubArrayTest.m"; sourceTree = "<group>"; };
+		D04248A3BA01B17C3B7189B2 /* NSDictionary+SelectorTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+SelectorTest.m"; sourceTree = "<group>"; };
+		D04248A7B93BE23DE2E224A6 /* NSSet+EnumerationTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSSet+EnumerationTest.m"; sourceTree = "<group>"; };
+		D04248D9D3252D34FC30ED1A /* NSDictionary+OVSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+OVSelector.h"; sourceTree = "<group>"; };
+		D0424915C4F6EBE97D420115 /* NSString+OVBase64Encode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVBase64Encode.m"; sourceTree = "<group>"; };
+		D042495C6033AD086F92EF77 /* NSString+RegularExpressionTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+RegularExpressionTest.m"; sourceTree = "<group>"; };
+		D042498C02813F5714CD480A /* NSArray+OVInitialize.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVInitialize.m"; sourceTree = "<group>"; };
+		D04249B037D915E7C43676E3 /* test_json.json */ = {isa = PBXFileReference; lastKnownFileType = file.json; path = test_json.json; sourceTree = "<group>"; };
+		D04249B6E8A507DC042808B6 /* NSArray+OVCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVCore.m"; sourceTree = "<group>"; };
+		D0424A40ECC8BD48759D5A72 /* NSArray+OVDifference.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVDifference.m"; sourceTree = "<group>"; };
+		D0424A4A803B782A8FA502D4 /* NSString+OVDebugging.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVDebugging.m"; sourceTree = "<group>"; };
+		D0424A73C79C6BB38EA0D8AB /* NSString+ComponentsTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+ComponentsTest.m"; sourceTree = "<group>"; };
+		D0424A809276F441FAF9EE8E /* NSObject+Equals.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+Equals.h"; sourceTree = "<group>"; };
+		D0424AA1B3C494CAC4ECA6FC /* NSArray+OVSelector.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVSelector.h"; sourceTree = "<group>"; };
+		D0424B70FF7E679AC7E03C99 /* NSURL+OVComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURL+OVComponents.h"; sourceTree = "<group>"; };
+		D0424B8E20BEA208DEAFE2B3 /* NSString+Base64EncodeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+Base64EncodeTest.m"; sourceTree = "<group>"; };
+		D0424BB08C33D1F962AB6B4C /* NSSet+OVEnumeration.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSSet+OVEnumeration.h"; sourceTree = "<group>"; };
+		D0424BEF37220624679EEEB3 /* NSMutableArray+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+OVShorthand.m"; sourceTree = "<group>"; };
+		D0424C822FE8525FFD191A4C /* NSArray+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVShorthand.h"; sourceTree = "<group>"; };
+		D0424CCD846FD2BFD9E4F3AB /* NSArray+OVRandom.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVRandom.h"; sourceTree = "<group>"; };
+		D0424CEAF7C42EC9BD0937C7 /* NSObject+Equals.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+Equals.m"; sourceTree = "<group>"; };
+		D0424CF217C7DDFC4BE9E8F2 /* NSArray+OVEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVEnumeration.m"; sourceTree = "<group>"; };
+		D0424D14ED065A4E1E61323D /* NSBundle+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSBundle+OVShorthand.h"; sourceTree = "<group>"; };
+		D0424D749FAA12D228A9AF1E /* NSDictionary+OVEnumeration.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OVEnumeration.m"; sourceTree = "<group>"; };
+		D0424D83ABD78BA8C672B87B /* NSString+OVComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVComponents.h"; sourceTree = "<group>"; };
+		D0424E1C6EE3445E871F6D4D /* NSString+OVComponents.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+OVComponents.m"; sourceTree = "<group>"; };
+		D0424E278809EB08E9BC290B /* NSString+RegularExpressionTestWithCpp.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = "NSString+RegularExpressionTestWithCpp.mm"; sourceTree = "<group>"; };
+		D0424E56FE025B0487646B59 /* NSArray+OVShorthand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+OVShorthand.m"; sourceTree = "<group>"; };
+		D0424EDFF3EA6913527AF0B0 /* NSString+OVBase64Encode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+OVBase64Encode.h"; sourceTree = "<group>"; };
+		D0424F44BAE4A0B2604E02F4 /* NSDictionary+OVSelector.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OVSelector.m"; sourceTree = "<group>"; };
+		D0424F4D0B6041530EBE1828 /* NSMutableArray+OVShorthand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+OVShorthand.h"; sourceTree = "<group>"; };
+		D0424F6DA1F01F7010322FE6 /* NSDictionary+OVCore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+OVCore.m"; sourceTree = "<group>"; };
+		D0424FB099E5059CE5289F8E /* NSArray+OVDifference.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+OVDifference.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B9BEB6CD1669B27100A1D26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEB6D41669B27100A1D26D /* Foundation.framework in Frameworks */,
+				CB0CFE4EA05B4D7AAE248AE8 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BEB6DD1669B27100A1D26D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEB6E31669B27100A1D26D /* SenTestingKit.framework in Frameworks */,
+				B9BEB6E51669B27100A1D26D /* UIKit.framework in Frameworks */,
+				B9BEB6E61669B27100A1D26D /* Foundation.framework in Frameworks */,
+				B9BEB6E91669B27100A1D26D /* libOverline.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1C3D52E30BF36E602D315E27 /* Header */ = {
+			isa = PBXGroup;
+			children = (
+				A6249AA41948BCF700B1BD41 /* Overline+UIKit.h */,
+				1C3D53CE39A72650FB5E56C8 /* Overline+BlocksKit.h */,
+				D042400B602A3B13E5F07390 /* Overline.h */,
+			);
+			path = Header;
+			sourceTree = "<group>";
+		};
+		1C3D573BD092584B9D4A5BE0 /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D5636F7A6FA6860983442 /* NSNull+NaturalTest.m */,
+			);
+			path = NSNull;
+			sourceTree = "<group>";
+		};
+		1C3D5D28A1E0D1B5CB714179 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D57AC4CB25E57ACD8F8A1 /* NSObject+EqualsTest.m */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		1C3D5F17D5CE6F3A127451E7 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				1C3D50C558446172F7840F53 /* NSNumber+EqualsTest.m */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		A6249A921948BBF300B1BD41 /* NSLayoutConstraint */ = {
+			isa = PBXGroup;
+			children = (
+				A6249A931948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.h */,
+				A6249A941948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.m */,
+			);
+			path = NSLayoutConstraint;
+			sourceTree = "<group>";
+		};
+		A6249A9A1948BC3300B1BD41 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				A6249A9B1948BC3300B1BD41 /* UIBezierPath+OVShapes.h */,
+				A6249A9C1948BC3300B1BD41 /* UIBezierPath+OVShapes.m */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		A64919DB193891F30075626D /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				A6249A9A1948BC3300B1BD41 /* UIBezierPath */,
+				A64919DC193891F30075626D /* UIColor */,
+				A64919DF193891F30075626D /* UIImage */,
+				A64919E4193891F30075626D /* UIView */,
+			);
+			path = UIKit;
+			sourceTree = "<group>";
+		};
+		A64919DC193891F30075626D /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				A64919DD193891F30075626D /* UIColor+OVColorAdjust.h */,
+				A64919DE193891F30075626D /* UIColor+OVColorAdjust.m */,
+				A6249A9E1948BC3A00B1BD41 /* UIColor+OVRandom.h */,
+				A6249A9F1948BC3A00B1BD41 /* UIColor+OVRandom.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		A64919DF193891F30075626D /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				A6249AA11948BC6E00B1BD41 /* UIImage+OVDrawing.h */,
+				A6249AA21948BC6E00B1BD41 /* UIImage+OVDrawing.m */,
+				A64919E0193891F30075626D /* UIImage+OVGradients.h */,
+				A64919E1193891F30075626D /* UIImage+OVGradients.m */,
+				A64919E2193891F30075626D /* UIImage+OVTransforms.h */,
+				A64919E3193891F30075626D /* UIImage+OVTransforms.m */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		A64919E4193891F30075626D /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				A64919E5193891F30075626D /* UIView+OVPositioning.h */,
+				A64919E6193891F30075626D /* UIView+OVPositioning.m */,
+				A64919E7193891F30075626D /* UIView+OVSnapshot.h */,
+				A64919E8193891F30075626D /* UIView+OVSnapshot.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		A6C0D05C193E8A8C00B57317 /* NSMutableDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				A6C0D05D193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.h */,
+				A6C0D05E193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m */,
+			);
+			path = NSMutableDictionary;
+			sourceTree = "<group>";
+		};
+		A6C45B9717BE6184000F100F /* NSDate */ = {
+			isa = PBXGroup;
+			children = (
+				A6C45B9917BE6673000F100F /* NSDate+OVComponents.h */,
+				A6C45B9A17BE6673000F100F /* NSDate+OVComponents.m */,
+			);
+			name = NSDate;
+			sourceTree = "<group>";
+		};
+		B9BEB6C51669B27100A1D26D = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6D51669B27100A1D26D /* Overline */,
+				B9BEB6EA1669B27100A1D26D /* OverlineTests */,
+				B9BEB6D21669B27100A1D26D /* Frameworks */,
+				B9BEB6D11669B27100A1D26D /* Products */,
+				776CEF8582F049128B505AAB /* Pods.xcconfig */,
+				1C3D52E30BF36E602D315E27 /* Header */,
+			);
+			sourceTree = "<group>";
+		};
+		B9BEB6D11669B27100A1D26D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6D01669B27100A1D26D /* libOverline.a */,
+				B9BEB6E11669B27100A1D26D /* OverlineTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B9BEB6D21669B27100A1D26D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6D31669B27100A1D26D /* Foundation.framework */,
+				B9BEB6E21669B27100A1D26D /* SenTestingKit.framework */,
+				B9BEB6E41669B27100A1D26D /* UIKit.framework */,
+				BF2F2C3B42004E7080F20EB9 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B9BEB6D51669B27100A1D26D /* Overline */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6D61669B27100A1D26D /* Supporting Files */,
+				D042488AFA4C65ECC6EAE677 /* Core */,
+				D0424135FA05915BECF1AD1A /* Over */,
+				A64919DB193891F30075626D /* UIKit */,
+			);
+			path = Overline;
+			sourceTree = "<group>";
+		};
+		B9BEB6D61669B27100A1D26D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6D71669B27100A1D26D /* Overline-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B9BEB6EA1669B27100A1D26D /* OverlineTests */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6EB1669B27100A1D26D /* Supporting Files */,
+				D042452C7E55E6A6DA33DC2B /* NSArray */,
+				D042456F1C4396039674D370 /* NSString */,
+				D04249277C6899E960266F72 /* NSURL */,
+				D0424FE4BE4B436801557582 /* NSDictionary */,
+				D042424532E79F74FC5C19A0 /* NSBundle */,
+				D04249B037D915E7C43676E3 /* test_json.json */,
+				1C3D5F17D5CE6F3A127451E7 /* NSNumber */,
+				1C3D5D28A1E0D1B5CB714179 /* NSObject */,
+				1C3D573BD092584B9D4A5BE0 /* NSNull */,
+				D04249E6D72E9324AA59274C /* NSSet */,
+				D04249BF4B4A2B4F139E2918 /* NSData */,
+				D0424B32E1475CC914B2105B /* NSDateFormatter */,
+			);
+			path = OverlineTests;
+			sourceTree = "<group>";
+		};
+		B9BEB6EB1669B27100A1D26D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				B9BEB6EC1669B27100A1D26D /* OverlineTests-Info.plist */,
+				B9BEB6ED1669B27100A1D26D /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		D04240A3C30644E2B6817409 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D0424D749FAA12D228A9AF1E /* NSDictionary+OVEnumeration.m */,
+				D042453749FA838A230BE280 /* NSDictionary+OVEnumeration.h */,
+				D04247D1B323DC1DD7540E31 /* NSDictionary+OVPath.m */,
+				D04247A852F232C1077D12B4 /* NSDictionary+OVPath.h */,
+				D0424F44BAE4A0B2604E02F4 /* NSDictionary+OVSelector.m */,
+				D04248D9D3252D34FC30ED1A /* NSDictionary+OVSelector.h */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+		D0424135FA05915BECF1AD1A /* Over */ = {
+			isa = PBXGroup;
+			children = (
+				A6C45B9717BE6184000F100F /* NSDate */,
+				D04242429511CF659F450484 /* NSDateFormatter */,
+				D04240A3C30644E2B6817409 /* NSDictionary */,
+				D0424380808EF2AEAE962B18 /* NSData */,
+				A6249A921948BBF300B1BD41 /* NSLayoutConstraint */,
+				D042468A02DB47E33C9A9145 /* NSObject */,
+				A6C0D05C193E8A8C00B57317 /* NSMutableDictionary */,
+				D04248B14AA8C7A86C708A5F /* NSNull */,
+				D0424D833CD42777921E58B5 /* NSString */,
+				D04245B832B3DABA0A6B9B4C /* NSSet */,
+				D0424E7EB8B2196FBA9EE070 /* NSBundle */,
+				D0424C09C46A1F8BA6806DD7 /* NSArray */,
+				D0424D114C5B45901F23ADB6 /* NSURL */,
+				D0424724A5E28A7B1CBBBF29 /* NSNumber */,
+				D0424224719D34C7BFA8A47E /* OVBase64Encode.h */,
+			);
+			path = Over;
+			sourceTree = "<group>";
+		};
+		D04242429511CF659F450484 /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				D04243DE4A3B312DFE907596 /* NSDateFormatter+OVShorthand.m */,
+				D042408BC2B66584CE53E358 /* NSDateFormatter+OVShorthand.h */,
+			);
+			path = NSDateFormatter;
+			sourceTree = "<group>";
+		};
+		D042424532E79F74FC5C19A0 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D0424766886F554380AE5591 /* NSBundle+ShorthandTest.m */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		D0424380808EF2AEAE962B18 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D042404CB86252C7D0D19801 /* NSData+OVBase64Encode.m */,
+				D042407D153AF56D7BF47D34 /* NSData+OVBase64Encode.h */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		D042442AC6E064F1E91EF892 /* NSMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				D04241A30FD694A8C3E3CD23 /* NSMutableArray+ShorthandTest.m */,
+			);
+			path = NSMutableArray;
+			sourceTree = "<group>";
+		};
+		D042447C549C585476B62090 /* NSMutableArray */ = {
+			isa = PBXGroup;
+			children = (
+				A62C44E617B14FBD003B335B /* NSMutableArray+OVSorting.h */,
+				A62C44E717B14FBD003B335B /* NSMutableArray+OVSorting.m */,
+				D0424BEF37220624679EEEB3 /* NSMutableArray+OVShorthand.m */,
+				D0424F4D0B6041530EBE1828 /* NSMutableArray+OVShorthand.h */,
+			);
+			path = NSMutableArray;
+			sourceTree = "<group>";
+		};
+		D042452C7E55E6A6DA33DC2B /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				D042476B75CA238FE3ABF31E /* NSArray+SelectorTest.m */,
+				D04242F8E35BB29D8678757D /* NSArray+EnumerationTest.m */,
+				D0424426C03EA111BD75A196 /* NSArray+RandomTest.m */,
+				D042442AC6E064F1E91EF892 /* NSMutableArray */,
+				D0424894673E704C67F15986 /* NSArray+SubArrayTest.m */,
+				1C3D564AF68B0AF84B1D2AC9 /* NSArray+ReverseTest.m */,
+				1C3D57FABE27CD27B350BF01 /* NSArray+InitializeTest.m */,
+				1C3D5ECFDDEF57613AB979D3 /* NSArray+ShorthandTest.m */,
+				1C3D50091C39ACD095454A34 /* NSArray+DifferenceTest.m */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		D042456F1C4396039674D370 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				D0424A73C79C6BB38EA0D8AB /* NSString+ComponentsTest.m */,
+				D042495C6033AD086F92EF77 /* NSString+RegularExpressionTest.m */,
+				D042458B093499E4CAB6522C /* NSString+ShorthandTest.m */,
+				D04240A24254FAAECA38EE4A /* NSString+HashTest.m */,
+				D04247AD1611453237486D1F /* NSString+URLEncodeTest.m */,
+				D042426ABEBF61458E6D6532 /* NSString+JSONTest.m */,
+				D0424B8E20BEA208DEAFE2B3 /* NSString+Base64EncodeTest.m */,
+				D0424E278809EB08E9BC290B /* NSString+RegularExpressionTestWithCpp.mm */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		D04245B832B3DABA0A6B9B4C /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+				D04246C493538AEE71FD3659 /* NSSet+OVEnumeration.m */,
+				D0424BB08C33D1F962AB6B4C /* NSSet+OVEnumeration.h */,
+			);
+			path = NSSet;
+			sourceTree = "<group>";
+		};
+		D042468A02DB47E33C9A9145 /* NSObject */ = {
+			isa = PBXGroup;
+			children = (
+				D0424CEAF7C42EC9BD0937C7 /* NSObject+Equals.m */,
+				D0424A809276F441FAF9EE8E /* NSObject+Equals.h */,
+			);
+			path = NSObject;
+			sourceTree = "<group>";
+		};
+		D0424724A5E28A7B1CBBBF29 /* NSNumber */ = {
+			isa = PBXGroup;
+			children = (
+				D042467B11B254FD7203290F /* NSNumber+OVEquals.m */,
+				D04244F9ABECA20B4A95C8CD /* NSNumber+OVEquals.h */,
+			);
+			path = NSNumber;
+			sourceTree = "<group>";
+		};
+		D042488AFA4C65ECC6EAE677 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				D04249B6E8A507DC042808B6 /* NSArray+OVCore.m */,
+				D04240116AAC53A0946BCC42 /* NSSet+OVCore.m */,
+				D04242A86A7F25F2E155D0FC /* NSDictionary+OVCore.h */,
+				D0424F6DA1F01F7010322FE6 /* NSDictionary+OVCore.m */,
+				D04246E08238CCCC69B4E13D /* NSArray+OVCore.h */,
+				D04243DDE37F212FFAE310FF /* NSSet+OVCore.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		D04248B14AA8C7A86C708A5F /* NSNull */ = {
+			isa = PBXGroup;
+			children = (
+				D042468F7E42B4AD614187B1 /* NSNull+OVNatural.m */,
+				D04240264D142D58417DA56A /* NSNull+OVNatural.h */,
+			);
+			path = NSNull;
+			sourceTree = "<group>";
+		};
+		D04249277C6899E960266F72 /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				D042468B375A7E6202FAEB7A /* NSURL+ComponentsTest.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
+		D04249BF4B4A2B4F139E2918 /* NSData */ = {
+			isa = PBXGroup;
+			children = (
+				D042485F5640A2098A536A83 /* NSData+Base64EncodeTest.m */,
+			);
+			path = NSData;
+			sourceTree = "<group>";
+		};
+		D04249E6D72E9324AA59274C /* NSSet */ = {
+			isa = PBXGroup;
+			children = (
+				D04248A7B93BE23DE2E224A6 /* NSSet+EnumerationTest.m */,
+			);
+			path = NSSet;
+			sourceTree = "<group>";
+		};
+		D0424B32E1475CC914B2105B /* NSDateFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				D0424363BBA9E0B17BE4F77F /* NSDateFormatter+ShorthandTest.m */,
+			);
+			path = NSDateFormatter;
+			sourceTree = "<group>";
+		};
+		D0424C09C46A1F8BA6806DD7 /* NSArray */ = {
+			isa = PBXGroup;
+			children = (
+				A62C44E817B14FCA003B335B /* NSArray+OVSorting.h */,
+				A62C44E917B14FCA003B335B /* NSArray+OVSorting.m */,
+				D04243B92EA94F475DF9B361 /* NSArray+OVSelector.m */,
+				D0424AA1B3C494CAC4ECA6FC /* NSArray+OVSelector.h */,
+				D0424CF217C7DDFC4BE9E8F2 /* NSArray+OVEnumeration.m */,
+				D04242C399EC07EE9B5793B9 /* NSArray+OVEnumeration.h */,
+				D042464969047BA9F9FC4067 /* NSArray+OVRandom.m */,
+				D0424CCD846FD2BFD9E4F3AB /* NSArray+OVRandom.h */,
+				D042447C549C585476B62090 /* NSMutableArray */,
+				D04243F380DE414A55D6C2A4 /* NSArray+OVSubArray.m */,
+				D04241291A0341A3B0DC4DD7 /* NSArray+OVSubArray.h */,
+				D042498C02813F5714CD480A /* NSArray+OVInitialize.m */,
+				D0424840B6B0068DA39BBA64 /* NSArray+OVInitialize.h */,
+				D042468A9883EBD84D5080BA /* NSArray+OVReverse.m */,
+				D0424808AD3AADC17112E2FC /* NSArray+OVReverse.h */,
+				D0424E56FE025B0487646B59 /* NSArray+OVShorthand.m */,
+				D0424C822FE8525FFD191A4C /* NSArray+OVShorthand.h */,
+				D0424A40ECC8BD48759D5A72 /* NSArray+OVDifference.m */,
+				D0424FB099E5059CE5289F8E /* NSArray+OVDifference.h */,
+			);
+			path = NSArray;
+			sourceTree = "<group>";
+		};
+		D0424D114C5B45901F23ADB6 /* NSURL */ = {
+			isa = PBXGroup;
+			children = (
+				D0424516AD272E3BB4A2D6D0 /* NSURL+OVComponents.m */,
+				D0424B70FF7E679AC7E03C99 /* NSURL+OVComponents.h */,
+				D04243F65DB63D9828CA4626 /* NSURL+OVDirectories.h */,
+				D042473412C920D0AC873990 /* NSURL+OVDirectories.m */,
+			);
+			path = NSURL;
+			sourceTree = "<group>";
+		};
+		D0424D833CD42777921E58B5 /* NSString */ = {
+			isa = PBXGroup;
+			children = (
+				D0424E1C6EE3445E871F6D4D /* NSString+OVComponents.m */,
+				D0424D83ABD78BA8C672B87B /* NSString+OVComponents.h */,
+				D0424207CBC3948E027DE1EC /* NSString+OVRegularExpression.m */,
+				D04241DF8EFAB6F719B768A2 /* NSString+OVRegularExpression.h */,
+				D04240AE8161B489C69DB88A /* NSString+OVShorthand.m */,
+				D042431C1FAEDA86EBBC16AE /* NSString+OVShorthand.h */,
+				D042454875D60F3F899A277B /* NSString+OVHash.m */,
+				D04247A0B7CA6F731535AC2D /* NSString+OVHash.h */,
+				D04242A970FD3B90C0E8DF79 /* NSString+OVURLEncode.m */,
+				D04240A9A366C36401A05F26 /* NSString+OVURLEncode.h */,
+				D04242A9D610E776FA06C5B0 /* NSString+OVJSON.m */,
+				D042484DEFFFD2F7587F9D06 /* NSString+OVJSON.h */,
+				D0424915C4F6EBE97D420115 /* NSString+OVBase64Encode.m */,
+				D0424EDFF3EA6913527AF0B0 /* NSString+OVBase64Encode.h */,
+				D04245468E445BE883C02CA5 /* NSString+OVDebugging.h */,
+				D0424A4A803B782A8FA502D4 /* NSString+OVDebugging.m */,
+			);
+			path = NSString;
+			sourceTree = "<group>";
+		};
+		D0424E7EB8B2196FBA9EE070 /* NSBundle */ = {
+			isa = PBXGroup;
+			children = (
+				D04243D574640BAE1D987643 /* NSBundle+OVShorthand.m */,
+				D0424D14ED065A4E1E61323D /* NSBundle+OVShorthand.h */,
+			);
+			path = NSBundle;
+			sourceTree = "<group>";
+		};
+		D0424FE4BE4B436801557582 /* NSDictionary */ = {
+			isa = PBXGroup;
+			children = (
+				D04241DAD3B1E577CF535057 /* NSDictionary+EnumerationTest.m */,
+				D0424772830A98D01A4FCE27 /* NSDictionary+PathTest.m */,
+				D04248A3BA01B17C3B7189B2 /* NSDictionary+SelectorTest.m */,
+			);
+			path = NSDictionary;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B9BEB6CF1669B27100A1D26D /* Overline */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BEB6F51669B27100A1D26D /* Build configuration list for PBXNativeTarget "Overline" */;
+			buildPhases = (
+				B9BEB6CC1669B27100A1D26D /* Sources */,
+				B9BEB6CD1669B27100A1D26D /* Frameworks */,
+				B9BEB6CE1669B27100A1D26D /* CopyFiles */,
+				2C222678A89B47EAAB5605F7 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Overline;
+			productName = Overline;
+			productReference = B9BEB6D01669B27100A1D26D /* libOverline.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		B9BEB6E01669B27100A1D26D /* OverlineTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9BEB6F81669B27100A1D26D /* Build configuration list for PBXNativeTarget "OverlineTests" */;
+			buildPhases = (
+				B9BEB6DC1669B27100A1D26D /* Sources */,
+				B9BEB6DD1669B27100A1D26D /* Frameworks */,
+				B9BEB6DE1669B27100A1D26D /* Resources */,
+				B9BEB6DF1669B27100A1D26D /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B9BEB6E81669B27100A1D26D /* PBXTargetDependency */,
+			);
+			name = OverlineTests;
+			productName = OverlineTests;
+			productReference = B9BEB6E11669B27100A1D26D /* OverlineTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B9BEB6C71669B27100A1D26D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = yaakaito;
+			};
+			buildConfigurationList = B9BEB6CA1669B27100A1D26D /* Build configuration list for PBXProject "Overline" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = B9BEB6C51669B27100A1D26D;
+			productRefGroup = B9BEB6D11669B27100A1D26D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B9BEB6CF1669B27100A1D26D /* Overline */,
+				B9BEB6E01669B27100A1D26D /* OverlineTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B9BEB6DE1669B27100A1D26D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B9BEB6EF1669B27100A1D26D /* InfoPlist.strings in Resources */,
+				D04243DA34EE5E3F2E346B4D /* test_json.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2C222678A89B47EAAB5605F7 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+		B9BEB6DF1669B27100A1D26D /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B9BEB6CC1669B27100A1D26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A62C44EB17B14FE7003B335B /* NSMutableArray+OVSorting.m in Sources */,
+				D0424286ECDE78329A9BCB43 /* NSArray+OVCore.m in Sources */,
+				D0424F1BB1F8D1D39FA79049 /* NSSet+OVCore.m in Sources */,
+				D04240458F4302971323546A /* NSDictionary+OVCore.m in Sources */,
+				A6C45B9B17BE6673000F100F /* NSDate+OVComponents.m in Sources */,
+				D0424CF0053C60675B2DB2F4 /* NSDateFormatter+OVShorthand.m in Sources */,
+				A64919EC193891F30075626D /* UIView+OVPositioning.m in Sources */,
+				D04240602594BA2BD7EBE3D7 /* NSDictionary+OVEnumeration.m in Sources */,
+				D0424C792702266B3848E1A2 /* NSDictionary+OVPath.m in Sources */,
+				D0424FD7AB12D0164FF11C47 /* NSDictionary+OVSelector.m in Sources */,
+				D04243065691A7A1AD4978ED /* NSData+OVBase64Encode.m in Sources */,
+				D04244245F4071E57E29CBA5 /* NSObject+Equals.m in Sources */,
+				A6249AA31948BC6E00B1BD41 /* UIImage+OVDrawing.m in Sources */,
+				D04243009BD43CE60EE4E345 /* NSNull+OVNatural.m in Sources */,
+				D0424D64CEA7F052D03E15C6 /* NSString+OVComponents.m in Sources */,
+				A62C44EA17B14FCA003B335B /* NSArray+OVSorting.m in Sources */,
+				A6249AA01948BC3A00B1BD41 /* UIColor+OVRandom.m in Sources */,
+				A64919EA193891F30075626D /* UIImage+OVGradients.m in Sources */,
+				D0424B141888F8BEB7CE078F /* NSString+OVRegularExpression.m in Sources */,
+				D0424F4BA13A8684548F7187 /* NSString+OVShorthand.m in Sources */,
+				D0424D8388677823D283FCF6 /* NSString+OVHash.m in Sources */,
+				A64919E9193891F30075626D /* UIColor+OVColorAdjust.m in Sources */,
+				D0424489BD1E05FE459FB3D9 /* NSString+OVURLEncode.m in Sources */,
+				D04244041D5AD4484F99EA55 /* NSString+OVJSON.m in Sources */,
+				A6249A9D1948BC3300B1BD41 /* UIBezierPath+OVShapes.m in Sources */,
+				D0424829DFC36B940FB00E10 /* NSString+OVBase64Encode.m in Sources */,
+				A6C0D05F193E8A8C00B57317 /* NSMutableDictionary+OVShorthand.m in Sources */,
+				D0424C9D1AB7E097E698ACCF /* NSSet+OVEnumeration.m in Sources */,
+				D0424A90D2DF6E2DEFD8FB63 /* NSBundle+OVShorthand.m in Sources */,
+				D042451A5297965AD08F7AFF /* NSArray+OVSelector.m in Sources */,
+				D0424F7EEE338B0951F4D47D /* NSArray+OVEnumeration.m in Sources */,
+				D0424F8C53390354B30DDDC3 /* NSArray+OVRandom.m in Sources */,
+				A6249A981948BBF300B1BD41 /* NSLayoutConstraint+OVConstructors.m in Sources */,
+				D0424F783EC65563531D4F95 /* NSMutableArray+OVShorthand.m in Sources */,
+				D0424AA50EED21145E0BD0BC /* NSArray+OVSubArray.m in Sources */,
+				D042435B5DEF196FA65D5B68 /* NSArray+OVInitialize.m in Sources */,
+				A64919ED193891F30075626D /* UIView+OVSnapshot.m in Sources */,
+				D0424FDF7CABD139FFB6B50D /* NSArray+OVReverse.m in Sources */,
+				A64919EB193891F30075626D /* UIImage+OVTransforms.m in Sources */,
+				D04240967DAC37DA92E6F6B3 /* NSArray+OVShorthand.m in Sources */,
+				D0424394B37759469448C4AF /* NSArray+OVDifference.m in Sources */,
+				D0424E4CF30A9A3495BB82F9 /* NSURL+OVComponents.m in Sources */,
+				D0424E9BBB11CA61D55A7D75 /* NSNumber+OVEquals.m in Sources */,
+				D042441789DD45034ED7E941 /* NSString+OVDebugging.m in Sources */,
+				D04248906C44439564BE405C /* NSURL+OVDirectories.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B9BEB6DC1669B27100A1D26D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D0424883F914BB76335CE4D6 /* NSArray+SelectorTest.m in Sources */,
+				D04243E123619AFA41C2410B /* NSArray+EnumerationTest.m in Sources */,
+				D042433459084490D6378763 /* NSString+ComponentsTest.m in Sources */,
+				D0424BEF4E84BFE0D37D595C /* NSURL+ComponentsTest.m in Sources */,
+				D04245DB47B108B8D96F532F /* NSString+RegularExpressionTest.m in Sources */,
+				D0424198BE863AA5060AC621 /* NSArray+RandomTest.m in Sources */,
+				D042497F446D91BF81D3351A /* NSDictionary+EnumerationTest.m in Sources */,
+				D042441E13E90F123551E40F /* NSString+ShorthandTest.m in Sources */,
+				D042470D3FBFE9B52210353C /* NSBundle+ShorthandTest.m in Sources */,
+				D0424F87E4C59ABD7F913299 /* NSString+HashTest.m in Sources */,
+				1C3D52633B221E980CA9C81F /* NSNumber+EqualsTest.m in Sources */,
+				1C3D5F14013A290175157FDE /* NSObject+EqualsTest.m in Sources */,
+				1C3D53FD2743FE3D77502EA5 /* NSNull+NaturalTest.m in Sources */,
+				D0424708CB0CDBB30346B8AC /* NSString+URLEncodeTest.m in Sources */,
+				D0424993D2C2DB96971B20DC /* NSString+JSONTest.m in Sources */,
+				D042451291D2AF9E120DDD99 /* NSSet+EnumerationTest.m in Sources */,
+				D0424B9A19C1D0E04B2B98BB /* NSString+Base64EncodeTest.m in Sources */,
+				D0424F4543B2FCEA80BA9C0C /* NSData+Base64EncodeTest.m in Sources */,
+				D0424F992092522EA914C301 /* NSMutableArray+ShorthandTest.m in Sources */,
+				D0424554AF00FFFF6A618953 /* NSDictionary+PathTest.m in Sources */,
+				D042463D1665156E36063B3C /* NSArray+SubArrayTest.m in Sources */,
+				1C3D5F80D8C652BB5F5DA930 /* NSArray+ReverseTest.m in Sources */,
+				1C3D5BDFBF98915E1C83DDCC /* NSArray+InitializeTest.m in Sources */,
+				1C3D597D7DB91993DDD04091 /* NSArray+ShorthandTest.m in Sources */,
+				1C3D52573BEB52AA63491EFA /* NSArray+DifferenceTest.m in Sources */,
+				D0424E2178D93B99D4B0F741 /* NSDictionary+SelectorTest.m in Sources */,
+				D0424D0280856C34440C2947 /* NSDateFormatter+ShorthandTest.m in Sources */,
+				D0424A4EFABD146CA5219E97 /* NSArray+OVCore.m in Sources */,
+				D0424134779EA93852F1692F /* NSSet+OVCore.m in Sources */,
+				D042415F073248C734C5C922 /* NSDictionary+OVCore.m in Sources */,
+				D04248B94E67CE2DCA2B35B1 /* NSDateFormatter+OVShorthand.m in Sources */,
+				D0424857C46890BD8CC58FC6 /* NSDictionary+OVEnumeration.m in Sources */,
+				D042407BA916C7232ADB8CF1 /* NSDictionary+OVPath.m in Sources */,
+				D0424B8CEAEED7E939C6EA5D /* NSData+OVBase64Encode.m in Sources */,
+				D0424A72ED3E69DEA81CAFCC /* NSObject+Equals.m in Sources */,
+				D0424553E909B8F816BA641F /* NSNull+OVNatural.m in Sources */,
+				D04248E08202943DF5F5C185 /* NSString+OVComponents.m in Sources */,
+				D04244BCA8B0862715B9A3AF /* NSString+OVRegularExpression.m in Sources */,
+				D042435962AACA45462195BA /* NSString+OVShorthand.m in Sources */,
+				D0424783D2D5E3181000B36A /* NSString+OVHash.m in Sources */,
+				D0424E80BAFCAFAF61A4FEE5 /* NSString+OVURLEncode.m in Sources */,
+				D0424236C1CA72FDC68F3217 /* NSString+OVJSON.m in Sources */,
+				D0424112583F1149E402ADC9 /* NSString+OVBase64Encode.m in Sources */,
+				D04242B72684127F4D2491F7 /* NSSet+OVEnumeration.m in Sources */,
+				D04247937D4A8211BDFA7788 /* NSBundle+OVShorthand.m in Sources */,
+				D0424F4EFECE5A671B09D330 /* NSArray+OVSelector.m in Sources */,
+				D04246BAB5A5671BCA66B6DF /* NSArray+OVEnumeration.m in Sources */,
+				D04245254AD1A054756C81A4 /* NSArray+OVRandom.m in Sources */,
+				D04246B313A63543867621E5 /* NSMutableArray+OVShorthand.m in Sources */,
+				D04243E81B3953AC0F40029E /* NSArray+OVSubArray.m in Sources */,
+				D0424CD5CA67478BEE46AD05 /* NSURL+OVComponents.m in Sources */,
+				D04243CE7F7D4CC814CF72CF /* NSNumber+OVEquals.m in Sources */,
+				D04249B25FCA1CAEFDE11CEA /* NSString+OVDebugging.m in Sources */,
+				D04240221F16700D627B0560 /* NSString+RegularExpressionTestWithCpp.mm in Sources */,
+				D04241F736A92C31F7D521F0 /* NSURL+OVDirectories.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B9BEB6E81669B27100A1D26D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B9BEB6CF1669B27100A1D26D /* Overline */;
+			targetProxy = B9BEB6E71669B27100A1D26D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B9BEB6ED1669B27100A1D26D /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B9BEB6EE1669B27100A1D26D /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B9BEB6F31669B27100A1D26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		B9BEB6F41669B27100A1D26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B9BEB6F61669B27100A1D26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776CEF8582F049128B505AAB /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Overline.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		B9BEB6F71669B27100A1D26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 776CEF8582F049128B505AAB /* Pods.xcconfig */;
+			buildSettings = {
+				DSTROOT = /tmp/Overline.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		B9BEB6F91669B27100A1D26D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
+				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/OCHamcrest\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/OCHamcrest\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		B9BEB6FA1669B27100A1D26D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Overline/Overline-Prefix.pch";
+				HEADER_SEARCH_PATHS = "${PODS_HEADERS_SEARCH_PATHS}";
+				INFOPLIST_FILE = "OverlineTests/OverlineTests-Info.plist";
+				OTHER_LDFLAGS = "-ObjC";
+				PODS_BUILD_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/BuildHeaders\" \"${PODS_ROOT}/BuildHeaders/OCHamcrest\"";
+				PODS_HEADERS_SEARCH_PATHS = "${PODS_PUBLIC_HEADERS_SEARCH_PATHS}";
+				PODS_PUBLIC_HEADERS_SEARCH_PATHS = "\"${PODS_ROOT}/Headers\" \"${PODS_ROOT}/Headers/OCHamcrest\"";
+				PODS_ROOT = "${SRCROOT}/Pods";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B9BEB6CA1669B27100A1D26D /* Build configuration list for PBXProject "Overline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEB6F31669B27100A1D26D /* Debug */,
+				B9BEB6F41669B27100A1D26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BEB6F51669B27100A1D26D /* Build configuration list for PBXNativeTarget "Overline" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEB6F61669B27100A1D26D /* Debug */,
+				B9BEB6F71669B27100A1D26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B9BEB6F81669B27100A1D26D /* Build configuration list for PBXNativeTarget "OverlineTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9BEB6F91669B27100A1D26D /* Debug */,
+				B9BEB6FA1669B27100A1D26D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B9BEB6C71669B27100A1D26D /* Project object */;
+}
